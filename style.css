@@ -137,3 +137,54 @@ label {
 .row-cols-2 > .col {
     margin-bottom: 20px;
 }
+
+.nav-link {
+    color: red; /* Torna os nomes vermelhos */
+    font-weight: bold; /* Opcional: deixa os nomes em negrito */
+    transition: color 0.3s ease; /* Adiciona uma transição suave ao hover */
+  }
+  
+  .nav-link:hover {
+    color: darkred; /* Fica um vermelho mais escuro no hover */
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fundo branco da página */
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: red; /* Fundo vermelho do card */
+}
+
+.card-body {
+    padding: 30px;
+}
+
+h1 {
+    color: #333;
+}
+
+.card-title {
+    color: white; /* Cor do texto do título do card */
+}
+
+.btn-light {
+    background-color: white; /* Botões com fundo branco */
+    color: red; /* Cor do texto dos botões */
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.btn-light:hover {
+    opacity: 0.9; /* Efeito de opacidade no hover */
+}
+
+  

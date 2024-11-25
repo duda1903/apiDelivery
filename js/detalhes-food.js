@@ -21,11 +21,15 @@ function displayFoodDetails(food) {
   const image = food.image || "https://via.placeholder.com/300";
 
   detailsDiv.innerHTML = `
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
     <h2>${name}</h2>
-    <img src="${image}" alt="${name}" />
+    <div style="display: flex; justify-content: center;">
+      <img src="${image}" alt="${name}" style="max-width: 50%; max-height: 300px; object-fit: contain;" />
+    </div>
     <p><strong>Preço:</strong> ${price}</p>
     <p>${description}</p>
-  `;
+  </div>
+`;
 }
 
 function getFoodIdFromUrl() {

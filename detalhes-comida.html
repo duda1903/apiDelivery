@@ -5,29 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detalhes da Comida</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      text-align: center;
-    }
-    #details {
-      margin-top: 20px;
-      background-color: #fff;
-      padding: 15px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+#details {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid red; /* Borda vermelha */
+  transition: all 0.3s ease; /* Animação suave */
+}
+
+#details:hover {
+  border: 2px solid darkred; /* Borda mais escura ao passar o mouse */
+  transform: scale(1.02); /* Efeito de zoom suave no hover */
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid red; /* Borda vermelha */
+  transition: all 0.3s ease; /* Animação suave */
+}
+
+img:hover {
+  border: 2px solid darkred; /* Borda mais escura ao passar o mouse */
+}
+
   </style>
 </head>
 <body>
   <h1>Detalhes da Comida</h1>
+  <a href="#" class="back-link" onclick="history.back(); return false;">‹</a>
   <div id="details"></div>
   <script src="js/detalhes-food.js"></script>
 </body>
