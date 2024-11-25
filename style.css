@@ -1,0 +1,139 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo vermelho para a página inicial */
+.body-inicio {
+    background-color: red;
+    height: 100vh;
+}
+
+/* Fundo branco para as páginas de Login e Cadastro */
+.body-login-cadastro {
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* Logo centralizado para a página inicial */
+.center-image {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Botões na página inicial */
+.move-down {
+    margin-top: 600px;
+}
+
+.btn-custom {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 2px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para links "voltar" */
+.back-link {
+    position: absolute; /* Fixa a seta na lateral */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da lateral */
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Campos de formulário e botões */
+label {
+    font-weight: bold;
+    color: red;
+}
+
+.form-control {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px; /* Aumenta o espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento entre os campos */
+}
+
+.btn-danger {
+    background-color: red;
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Centralização dos formulários de Login e Cadastro */
+.container {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px; /* Adiciona espaçamento do topo */
+}
+
+/* ==== Novos estilos para as páginas Contemporâneo e Pizzarias ==== */
+
+/* Fundo vermelho */
+.body-contemporaneo, .body-pizzarias {
+    background-color: red;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: black;
+    width: 100%;
+}
+
+/* Ícone do menu */
+.menu-icon {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Imagens dos itens do menu */
+.menu-item-image, .pizzaria-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+}
+
+/* Títulos e preços */
+.menu-item-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.menu-item-price {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Espaçamento entre os cards */
+.row-cols-2 > .col {
+    margin-bottom: 20px;
+}
